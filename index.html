@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="css/styles.css">
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
 
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
 
     <title>Notes</title>
 </head>
@@ -32,7 +35,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <div id="arrow-container" class="container">
         <div class="row">
             <div class="col-sm-4"></div>
 
@@ -48,7 +51,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="days-container" class="container">
 
         <div class="row">
 
@@ -79,7 +82,7 @@
 
                     </div>
                     <div class="card-footer text-muted">
-                        <button type="button" class="btn btn-lg btn-block btn-light">Add a note</button>
+                        <button type="button" class="add-note btn btn-lg btn-block btn-light">Add a note</button>
                     </div>
                 </div>
             </div>
@@ -113,7 +116,7 @@
 
                     </div>
                     <div class="card-footer text-muted">
-                        <button type="button" class="btn btn-lg btn-block btn-light">Add a note</button>
+                        <button type="button" class="add-note btn btn-lg btn-block btn-light">Add a note</button>
                     </div>
                 </div>
             </div>
@@ -145,15 +148,29 @@
                         </ul>
                     </div>
                     <div class="card-footer text-muted">
-                        <button type="button" class="btn btn-lg btn-block btn-light">Add a note</button>
+                        <button type="button" class="add-note btn btn-lg btn-block btn-light">Add a note</button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
-    <div class="col-sm-12" style="height:100px;"></div>
+<div class="note-editor container">
+<div class="row">
+<div class="col-sm-12">
 
+  <div class="form-group">
+    <label for="note-content">Note content</label>
+    <input id="note-content" class="form-control">
+  </div>
+  <button class="submit-note btn btn-primary">Submit</button>
+
+</div>
+</div>
+</div>
+
+    <div class="col-sm-12" style="height:100px;"></div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

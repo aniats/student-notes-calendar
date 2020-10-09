@@ -1,0 +1,12 @@
+.note-editor {
+  background-color: white;
+  position: relative;
+  top: 100vh;
+  height: 80vh;
+
+  transition: 0.5s ease-in-out 0s;
+}
+
+.add-note {
+
+}
